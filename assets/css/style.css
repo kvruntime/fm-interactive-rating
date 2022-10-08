@@ -1,0 +1,177 @@
+/* TODO: 
+1 - download & import
+- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+- Weights: 400, 700
+
+*/
+
+/* IMPORTS */
+
+/* VARIABLES */
+:root {
+	--color-orange: hsl(25, 97%, 53%);
+	--color-White: hsl(0, 0%, 100%);
+	--color-light-grey: hsl(217, 12%, 63%);
+	--color-medium-grey: hsl(216, 12%, 54%);
+	--color-dark-blue: hsl(213, 19%, 18%);
+	--color-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+/* TYPOGRAPHY */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Overpass', 'Roboto', sans-serif;
+	margin: 10px;
+	font-size: 15px;
+	height: 100vh;
+	background: var(--color-very-dark-blue);
+}
+
+main {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: black;
+	line-height: 1.5;
+	margin-top: 0;
+}
+
+p {
+	margin-top: 0;
+}
+
+picture,
+img,
+figure {
+	width: 100%;
+	margin: 0;
+}
+
+/* LAYOUTS */
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ICONS */
+.icon-container {
+	background-color: var(--color-medium-grey);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	padding: 0.5rem;
+}
+
+.icon {
+	aspect-ratio: 1/1;
+	width: 30px;
+}
+
+/* 	RATING */
+.rating {
+	background: var(--color-dark-blue);
+	padding: 2rem;
+	width: 340px;
+	border-radius: 20px;
+}
+
+.rating__heading {
+	color: var(--color-White);
+	margin: 2rem auto;
+}
+
+.rating__question {
+	color: var(--color-light-grey);
+}
+
+.rating__actions {
+	margin: 2.5rem auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.rating__action {
+	aspect-ratio: 1/1;
+	width: 40px;
+	background: var(--color-medium-grey);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	color: var(--color-White);
+	transition: all 0.5s;
+}
+
+.rating__action:hover {
+	color: white;
+	background-color: var(--color-orange);
+}
+
+.rating__action.rating__action--active {
+	background: var(--color-light-grey);
+}
+
+.rating__button {
+	width: 100%;
+	border: 0;
+	margin: 2rem auto;
+	padding: 1rem;
+	border-radius: 20px;
+	background: var(--color-orange);
+	color: var(--color-White);
+	transition: all 0.5s;
+}
+.rating__button:hover {
+	background-color: white;
+	color: var(--color-orange);
+}
+
+/* RATED */
+.rated {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 335px;
+}
+
+.rated__icon {
+	width: 100px;
+	height: auto;
+}
+
+.rated__rate {
+	color: var(--color-orange);
+	padding: 1rem;
+	background: var(--color-medium-grey);
+	margin: 3rem auto;
+	border-radius: 10px;
+}
+
+.rated__heading {
+	color: var(--color-White);
+}
+
+.rated__description {
+	color: var(--color-light-grey);
+}
