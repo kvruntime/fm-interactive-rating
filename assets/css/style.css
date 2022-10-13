@@ -116,6 +116,10 @@ figure {
 	justify-content: space-around;
 }
 
+.rating__actions *{
+	cursor: pointer;
+}
+
 .rating__action {
 	aspect-ratio: 1/1;
 	width: 40px;
