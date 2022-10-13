@@ -18,11 +18,11 @@ export default class RatingView {
           offering!
         </p>
         <div class="rating__actions">
-          <p data-value="1" class="rating__action"><span>1</span></p>
-          <p data-value="2" class="rating__action"><span>2</span></p>
-          <p data-value="3" class="rating__action"><span>3</span></p>
-          <p data-value="4" class="rating__action"><span>4</span></p>
-          <p data-value="5" class="rating__action"><span>5</span></p>
+          <p data-value="1" class="rating__action">1</p>
+          <p data-value="2" class="rating__action">2</p>
+          <p data-value="3" class="rating__action">3</p>
+          <p data-value="4" class="rating__action">4</p>
+          <p data-value="5" class="rating__action">5</p>
         </div>
         <button type="submit" class="rating__button">SUBMIT</button>
       </article>
