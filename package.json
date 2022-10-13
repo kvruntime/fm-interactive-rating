@@ -1,0 +1,22 @@
+{
+  "name": "fm-interactive-rating",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "main.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvruntime/fm-interactive-rating.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kvruntime/fm-interactive-rating/issues"
+  },
+  "homepage": "https://github.com/kvruntime/fm-interactive-rating#readme",
+  "devDependencies": {
+    "parcel":"^2.7.0"
+  }
+}
