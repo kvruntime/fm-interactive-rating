@@ -10,7 +10,7 @@ export default class RatingView {
     <form method="POST" id="rating-form">
       <article class="rating">
         <span class="icon-container">
-          <img class="icon" src="/assets/images/icon-star.svg" alt="">
+          <img class="icon" src='/assets/images/icon-star.svg' alt="star icon">
         </span>
         <h1 class="rating__heading">How did we do?</h1>
         <p class="rating__question">
@@ -18,11 +18,11 @@ export default class RatingView {
           offering!
         </p>
         <div class="rating__actions">
-          <span data-value="1" class="rating__action">1</span>
-          <span data-value="2" class="rating__action">2</span>
-          <span data-value="3" class="rating__action">3</span>
-          <span data-value="4" class="rating__action">4</span>
-          <span data-value="5" class="rating__action">5</span>
+          <button data-value="1" class="rating__action"><span>1</span></button>
+          <button data-value="2" class="rating__action"><span>2</span></button>
+          <button data-value="3" class="rating__action"><span>3</span></button>
+          <button data-value="4" class="rating__action"><span>4</span></button>
+          <button data-value="5" class="rating__action"><span>5</span></button>
         </div>
         <button type="submit" class="rating__button">SUBMIT</button>
       </article>

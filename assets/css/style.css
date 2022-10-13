@@ -6,6 +6,7 @@
 */
 
 /* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Manrope:wght@800&family=Overpass:wght@400;700&display=swap');
 
 /* VARIABLES */
 :root {
@@ -34,6 +35,7 @@ body {
 	font-size: 15px;
 	height: 100vh;
 	background: var(--color-very-dark-blue);
+	line-height: 1.5;
 }
 
 main {
@@ -51,6 +53,7 @@ h5 {
 	color: black;
 	line-height: 1.5;
 	margin-top: 0;
+	font-weight: 700;
 }
 
 p {
@@ -73,12 +76,15 @@ figure {
 
 /* ICONS */
 .icon-container {
-	background-color: var(--color-medium-grey);
+	background: #262f38;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 100%;
 	padding: 0.5rem;
+	overflow: hidden;
+	width: 50px;
+	aspect-ratio: 1/1;
 }
 
 .icon {
@@ -88,7 +94,7 @@ figure {
 
 /* 	RATING */
 .rating {
-	background: var(--color-dark-blue);
+	background-color: #1c232d;
 	padding: 2rem;
 	width: 340px;
 	border-radius: 20px;
@@ -113,22 +119,29 @@ figure {
 .rating__action {
 	aspect-ratio: 1/1;
 	width: 40px;
-	background: var(--color-medium-grey);
 	display: flex;
+	border: 0;
 	align-items: center;
 	justify-content: center;
 	border-radius: 100%;
 	color: var(--color-White);
 	transition: all 0.5s;
+	background-color: #262f38;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 
 .rating__action:hover {
 	color: white;
-	background-color: var(--color-orange);
+	font-weight: 700;
+	background: var(--color-orange);
 }
 
 .rating__action.rating__action--active {
 	background: var(--color-light-grey);
+	color: white;
 }
 
 .rating__button {
@@ -140,6 +153,8 @@ figure {
 	background: var(--color-orange);
 	color: var(--color-White);
 	transition: all 0.5s;
+	letter-spacing: 2px;
+	font-weight: 700;
 }
 .rating__button:hover {
 	background-color: white;
@@ -153,6 +168,7 @@ figure {
 	flex-direction: column;
 	align-items: center;
 	height: 335px;
+	background-color: #1e252f;
 }
 
 .rated__icon {
@@ -163,9 +179,9 @@ figure {
 .rated__rate {
 	color: var(--color-orange);
 	padding: 1rem;
-	background: var(--color-medium-grey);
+	background-color: #242e38;
 	margin: 3rem auto;
-	border-radius: 10px;
+	border-radius: 20px;
 }
 
 .rated__heading {
@@ -174,4 +190,5 @@ figure {
 
 .rated__description {
 	color: var(--color-light-grey);
+	margin-bottom: 0;
 }
