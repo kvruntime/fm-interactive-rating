@@ -1,3 +1,6 @@
+import iconStar from '../assets/images/icon-star.svg';
+import illustrationThank from '../assets/images/illustration-thank-you.svg';
+
 export default class RatingView {
 	constructor(root) {
 		this.root = root;
@@ -10,7 +13,7 @@ export default class RatingView {
     <form method="POST" id="rating-form">
       <article class="rating">
         <span class="icon-container">
-          <img class="icon" src='/assets/images/icon-star.svg' alt="star icon">
+          <img class="icon" src='${iconStar}' alt="star icon">
         </span>
         <h1 class="rating__heading">How did we do?</h1>
         <p class="rating__question">
@@ -66,7 +69,7 @@ export default class RatingView {
 		 */
 		return `
 		<article class="rating rated">
-			<img class="rated__icon" src="/assets/images/illustration-thank-you.svg" alt="thanks icon">
+			<img class="rated__icon" src="${illustrationThank}" alt="thanks icon">
 			<p class="rated__rate">
 			You selected ${rating} out of 5
 			</p>
